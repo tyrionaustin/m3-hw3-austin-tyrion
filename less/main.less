@@ -1,10 +1,56 @@
 @import "variables";
 
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
+
 .nav {
   background-color: @yellow-primary;
   width: @navwidth;
   height: @navheight;
 }
+
+li .nav-item{
+  font-size: @links;
+  font-weight: @font;
+}
+
+ .jumbotron-fluid {
+   background-color: @overlay;
+   position: relative;
+ }
+
+ .overlay {
+   position: absolute;
+   top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:200%;
+ }
+
+
+ h2 {
+   font-size: @header;
+   text-transform: uppercase;
+ }
+ span {
+   font-weight: 500;
+   color: @red-primary;
+   text-transform: uppercase;
+
+ }
+
+ .btn {
+   background-color: #F8DF1F;
+   border: none;
+ }
+
+ #banner {
+   opacity: .33;
+ }
 
 footer {
   background-color: @black;
