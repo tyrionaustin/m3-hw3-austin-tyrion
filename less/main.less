@@ -11,9 +11,11 @@ html{
   height: @navheight;
 }
 
-li .nav-item{
-  font-size: @links;
-  font-weight: @font;
+ li {
+  font-size: @font;
+    .nav-items{
+  font-weight: @links;
+  }
 }
 
  .jumbotron-fluid {
@@ -28,14 +30,14 @@ li .nav-item{
   bottom:0;
   left:0;
   width:100%;
-  height:200%;
+  height:100%;
  }
-
 
  h2 {
    font-size: @header;
    text-transform: uppercase;
  }
+
  span {
    font-weight: 500;
    color: @red-primary;
@@ -43,9 +45,22 @@ li .nav-item{
 
  }
 
+ #burger-section {
+   padding: 50px 25px;
+ }
+
+ #bob-section {
+   background-color:@gray-primary;
+   #burger-section();
+ }
+
  .btn {
    background-color: #F8DF1F;
    border: none;
+   border-radius: 8px;
+   font-size: @links;
+   text-transform:uppercase;
+   color: @black-secondary;
  }
 
  #banner {
@@ -54,4 +69,6 @@ li .nav-item{
 
 footer {
   background-color: @black;
+  border-top: 10px @yellow-primary solid;
+  padding-bottom: 30px;
 }
