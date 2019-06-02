@@ -9,13 +9,15 @@ html{
   background-color: @yellow-primary;
   width: @navwidth;
   height: @navheight;
-}
-
- li {
-  font-size: @font;
-    .nav-items{
-  font-weight: @links;
-  }
+  padding-left: 2%;
+    li {
+      font-size: @font;
+      text-align: center;
+      padding: 2% 1%;
+        .nav-items{
+          font-weight: @links;
+        }
+      }
 }
 
  .jumbotron-fluid {
@@ -64,11 +66,14 @@ html{
  }
 
  #banner {
-   opacity: .33;
+   opacity: .66;
  }
 
 footer {
   background-color: @black;
   border-top: 10px @yellow-primary solid;
   padding-bottom: 30px;
+  img {
+    padding-top: 25px;
+  }
 }
