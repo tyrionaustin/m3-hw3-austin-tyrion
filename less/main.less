@@ -13,9 +13,10 @@ html{
     li {
       font-size: @font;
       text-align: center;
-      padding: 2% 1%;
+      padding: 2% 2%;
         .nav-items{
           font-weight: @links;
+          width: 200px;
         }
       }
 }
@@ -27,13 +28,9 @@ html{
 
  .overlay {
    position: absolute;
-   top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  width:100%;
-  height:100%;
-  margin-top: 200px;
+   top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
  }
 
  h2 {
@@ -52,7 +49,11 @@ html{
 
  #burger-section {
    padding: 50px 25px;
- }
+    img{
+      padding-top: 25px;
+      padding-left: 25px;
+    }
+  }
 
  #bob-section {
    background-color:@gray-primary;
